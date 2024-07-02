@@ -11999,10 +11999,52 @@ footer.footer {
 .hero-scene * {
   position: relative;
 }
-.hero-scene .hero-scene-content {
+
+.hero-scene-content {
   height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.fixed-size {
+  width: 300px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.titre-image {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.image-card {
+  text-align: center; /* Center-aligning the image card content */
+}
+
+.image-card {
+  position: relative;
+}
+.image-card:hover .titre-image {
+  opacity: 1;
+}
+.image-card:hover img {
+  filter: brightness(0.3);
+}
+.image-card img {
+  transition: all 0.3s;
+}
+.image-card .titre-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s;
 }/*# sourceMappingURL=main.css.map */

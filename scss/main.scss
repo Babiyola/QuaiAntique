@@ -31,6 +31,7 @@ footer.footer{
         //Positionner les éléments devant le ::before
         position:relative;
     }
+}
 
     .hero-scene-content{
         height: 300px;
@@ -38,5 +39,44 @@ footer.footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+.text-justify{
+    text-align: justify;
+}
+.fixed-size {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+}
+.titre-image {
+    margin-top: 10px;
+    text-align: center;
+}
+.image-card {
+    text-align: center; /* Center-aligning the image card content */
+}
+.image-card{
+    position:relative;
+    &:hover{
+        .titre-image{
+            opacity: 1;
+        }
+        img{
+            filter: brightness(0.3);
+        }
+    }
+
+    img{
+        transition: all 0.3s;
+    }
+
+    .titre-image{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 0.3s;
     }
 }
