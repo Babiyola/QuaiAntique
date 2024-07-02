@@ -5,16 +5,18 @@ html{
     min-height: 100%;
 }
 main{
-    margin-bottom: 250px;
+    margin-bottom: 280px;
 }
 footer.footer{
     padding: 15px;
+    margin-bottom: 15px;
     position:absolute;
     bottom: 0;
     width:100%;
 }
 .hero-scene{
     position: relative;
+    margin-top:20px ;
     &::before{
         content:"";
         position: absolute;
@@ -50,7 +52,7 @@ footer.footer{
     object-fit: cover;
 }
 .titre-image {
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
 }
 .image-card {
@@ -79,4 +81,7 @@ footer.footer{
         opacity: 0;
         transition: all 0.3s;
     }
+}
+.label-form{
+    color: $primary;
 }
